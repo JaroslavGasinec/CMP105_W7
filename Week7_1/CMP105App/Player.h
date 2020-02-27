@@ -1,7 +1,7 @@
 #pragma once
 
 #include "Framework/GameObject.h"
-#include "Enemy.h"
+//#include "Enemy.h"
 
 class Player : public GameObject
 {

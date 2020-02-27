@@ -1,7 +1,7 @@
 #pragma once
 
 #include "Framework/GameObject.h"
-#include "Player.h"
+//#include "Player.h"
 
 class Enemy : public GameObject
 {
@@ -12,4 +12,4 @@ public:
 	void update(float dt);
 
 	float elapsedTime;
-}
+};
