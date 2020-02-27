@@ -35,12 +35,17 @@ void Player::handleInput(float dt)
 void Player::update(float dt) 
 {
 	if(hasFired)
-		bullet->update(dt);
+			bullet->update(dt);
+	if (bullet != nullptr && (bullet->getPosition().x > 1000 || bullet->getPosition().y > 1000)) { // window size should be used instead, or time
+		delete bullet;
+		hasFired = false;
+	}
+		
 }
 
 Bullet* Player::spawn(sf::Vector2f pos)
 {
-	Bullet newBullet;
-	newBullet.setPosition(pos);
-	return &newBullet;
+	Bullet* newBullet = new Bullet;
+	newBullet->setPosition(pos);
+	return newBullet;
 }

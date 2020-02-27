@@ -16,7 +16,7 @@ public:
 	Bullet* getBullet() {
 		return bullet;
 	};
-
+	
 private:
 	Bullet* bullet;
 	bool hasFired;
