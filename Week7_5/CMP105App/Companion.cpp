@@ -18,7 +18,7 @@ void Companion::update(float dt)
 	move(velocity*dt);
 }
 
-void Companion::moveToPlayer(Player* p)
+void Companion::moveToPlayer(GameObject* player)
 {
-	setPosition(p->getPosition());
+	setPosition(player->getPosition());
 }

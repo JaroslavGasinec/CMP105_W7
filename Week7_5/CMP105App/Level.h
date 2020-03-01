@@ -5,6 +5,7 @@
 #include <string>
 #include <iostream>
 #include "Player.h"
+#include "Companion.h"
 
 
 

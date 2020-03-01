@@ -5,17 +5,13 @@
 
 class Player : public GameObject
 {
+	Companion companion;
 public:
 	Player();
 	~Player();
 
 	void handleInput(float dt);
 	void update(float dt);
-	Companion* getCompanion()
-	{
-		return &companion;
-	};
-
-private:
-	Companion companion;
+	Companion* getCompanion() { return &companion; };
+	
 };

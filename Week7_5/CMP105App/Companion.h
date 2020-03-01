@@ -1,7 +1,7 @@
 #pragma once
 
 #include "Framework/GameObject.h"
-#include "Player.h"
+
 
 class Companion : public GameObject
 {
@@ -10,8 +10,6 @@ public:
 	~Companion();
 
 	void update(float dt);
-	void moveToPlayer(Player* player);
-
-private:
+	void moveToPlayer(GameObject* player);
 	
 };
